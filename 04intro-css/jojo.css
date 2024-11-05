@@ -1,0 +1,102 @@
+/* Body styling */
+body {
+    color: #080A15;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #bbbfc8; /* French gray */
+  }
+  
+  /* Header 1 styling */
+  h1 {
+    font-family: "Lato", serif; /* Changed from Oxygen */
+    font-weight: 700;
+    font-size: 36px;
+    background-color: #a8917f; /* Brown */
+  }
+  
+  /* Header 2 styling */
+  h2 {
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: #4A4E69; /* Muted dark purple */
+  }
+  
+  /* Paragraph styling */
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #080A15;
+  }
+  
+  /* Navigation styling */
+  nav {
+    background-color: #f3d67b; /* Jasmine */
+    border: 2px solid #a8917f; /* Add border for demo */
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;         /* Remove bullet points */
+    padding: 0;               /* Remove default padding */
+    margin: 0;                /* Remove default margin */
+    display: flex;            /* Enable Flexbox */
+    justify-content: center;  /* Center items horizontally */
+  }
+  
+  nav ul li {
+    margin: 0 10px;           /* Add space between items */
+  }
+  
+  nav ul li a {
+    text-decoration: none;    /* Remove underline from links */
+    color: #080A15;           /* Set link color */
+    padding: 10px 15px;       /* Add padding for clickable area */
+  }
+  
+  nav ul li a:hover {
+    color: #bbbfc8;           /* Change color on hover */
+  }
+  
+  /* Change bullet type for lists */
+  ul {
+    list-style-type: square;  /* Change bullet type to square */
+    padding-left: 20px;       /* Add padding */
+  }
+  
+  ol {
+    list-style-type: upper-roman; /* Change bullet type for ordered lists */
+    margin-left: 15px;
+  }
+  
+  /* Styling for definition list */
+  dl {
+    border: 1px solid #4A4E69;
+    padding: 10px;
+    background-color: #f0f0f5;
+    border-radius: 5px;
+  }
+  
+  dt {
+    font-weight: bold;
+  }
+  
+  dd {
+    margin-left: 20px;
+  }
+  
+  /* Pseudo class hover for anchor tags in content */
+  a:hover {
+    color: #4A4E69; /* Color change on hover for links in content */
+  }
+  
+  /* Example of a styled border */
+  .border-example {
+    border: 3px solid #080A15;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
