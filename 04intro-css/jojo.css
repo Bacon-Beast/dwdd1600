@@ -1,102 +1,185 @@
-/* Body styling */
+/* Link this CSS file in your HTML head with: <link rel="stylesheet" href="styles.css"> */
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Body Styling */
 body {
-    color: #080A15;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    background-color: #bbbfc8; /* French gray */
-  }
-  
-  /* Header 1 styling */
-  h1 {
-    font-family: "Lato", serif; /* Changed from Oxygen */
-    font-weight: 700;
-    font-size: 36px;
-    background-color: #a8917f; /* Brown */
-  }
-  
-  /* Header 2 styling */
-  h2 {
-    font-family: "Lato", serif;
-    font-weight: 300;
-    font-size: 24px;
-    color: #4A4E69; /* Muted dark purple */
-  }
-  
-  /* Paragraph styling */
-  p {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.6;
-    color: #080A15;
-  }
-  
-  /* Navigation styling */
-  nav {
-    background-color: #f3d67b; /* Jasmine */
-    border: 2px solid #a8917f; /* Add border for demo */
-    border-radius: 8px;
-    padding: 10px;
-  }
-  
-  nav ul {
-    list-style: none;         /* Remove bullet points */
-    padding: 0;               /* Remove default padding */
-    margin: 0;                /* Remove default margin */
-    display: flex;            /* Enable Flexbox */
-    justify-content: center;  /* Center items horizontally */
-  }
-  
-  nav ul li {
-    margin: 0 10px;           /* Add space between items */
-  }
-  
-  nav ul li a {
-    text-decoration: none;    /* Remove underline from links */
-    color: #080A15;           /* Set link color */
-    padding: 10px 15px;       /* Add padding for clickable area */
-  }
-  
-  nav ul li a:hover {
-    color: #bbbfc8;           /* Change color on hover */
-  }
-  
-  /* Change bullet type for lists */
-  ul {
-    list-style-type: square;  /* Change bullet type to square */
-    padding-left: 20px;       /* Add padding */
-  }
-  
-  ol {
-    list-style-type: upper-roman; /* Change bullet type for ordered lists */
-    margin-left: 15px;
-  }
-  
-  /* Styling for definition list */
-  dl {
-    border: 1px solid #4A4E69;
-    padding: 10px;
-    background-color: #f0f0f5;
-    border-radius: 5px;
-  }
-  
-  dt {
-    font-weight: bold;
-  }
-  
-  dd {
-    margin-left: 20px;
-  }
-  
-  /* Pseudo class hover for anchor tags in content */
-  a:hover {
-    color: #4A4E69; /* Color change on hover for links in content */
-  }
-  
-  /* Example of a styled border */
-  .border-example {
-    border: 3px solid #080A15;
-    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #bbbfc8; /* Light background color */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #a8917f; /* Dark blue background */
+    color: #333;
     padding: 20px;
-  }
-  
+    text-align: center;
+    border-bottom: 4px solid #111827; /* Dark border */
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: 700; /* Bold font weight */
+    margin: 0;
+}
+
+header h2 {
+    font-size: 1.5em;
+    font-weight: 400; /* Regular font weight */
+    margin: 5px 0 0;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #f3d67b; /* Medium blue background */
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #080a15;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1em;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: #ffde59; /* Hover effect with yellow color */
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #ffde59; /* Active item underline */
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
+
+main h1 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #080a15;
+    margin-bottom: 10px;
+}
+
+main h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #080a15;
+    margin-top: 20px;
+}
+
+main p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* List Styling */
+ul {
+    list-style-type: square; /* Change bullet type */
+    margin-left: 20px;
+    color: #080a15; /* List item color */
+}
+
+ol {
+    list-style-type: decimal; /* Default ordered list style */
+    margin-left: 20px;
+    color: #080a15; /* Ordered list item color */
+}
+
+/* Definition List Styling */
+dl dt {
+    font-weight: bold;
+    color: #080a15;
+    margin-top: 10px;
+}
+
+dl dd {
+    margin-left: 20px;
+    color: #333;
+    font-style: italic;
+}
+
+/* "Back to Top" Link */
+a[href="#top"] {
+    display: inline-block;
+    margin-top: 20px;
+    color: #ffde59;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a[href="#top"]:hover {
+    color: #ffde59;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #a8917f;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    margin-top: 20px;
+    border-top: 4px solid #111827; /* Dark border */
+}
+
+footer a {
+    color: #ffde59;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffebcc;
+}
+
+/* Address Styling */
+address {
+    font-style: normal;
+    color: #ffde59;
+    font-weight: 400;
+}
+
+/* Border and Border Radius */
+main img {
+    border: 2px solid #a8917f; /* Blue border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 5px;
+}
+
+/* Responsive Flexbox for Lists */
+main ul, main ol {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hover Effect for Links */
+a:hover {
+    color: #ffde59; /* Bright yellow on hover */
+}
+
+/* Add Background Colors for Highlighted Sections */
+header, nav, footer {
+    color: white;
+}
+
