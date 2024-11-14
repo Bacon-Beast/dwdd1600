@@ -68,7 +68,7 @@ nav ul li a:hover {
     color: #bbbfc8; /* Hover effect with yellow color */
 }
 
-nav ul li a.active {
+nav .active a {
     border-bottom: 2px solid #bbbfc8; /* Active item underline */
 }
 
