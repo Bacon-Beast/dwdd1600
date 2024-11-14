@@ -2,6 +2,7 @@
 
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Roboto:wght@400;700&display=swap');
 
 /* Body Styling */
 body {
@@ -20,7 +21,9 @@ header {
     text-align: center;
     border-bottom: 4px solid #111827; /* Dark border */
 }
-
+header, h1, h2 {
+    font-family: 'IM Fell Great Primer SC', serif;
+}
 header h1 {
     font-size: 2em;
     font-weight: 700; /* Bold font weight */
@@ -35,7 +38,7 @@ header h2 {
 
 /* Navigation Styling */
 nav {
-    background-color: #f3d67b; /* Medium blue background */
+    background-color: #f3d67b; /* yellow */
     height: 48px;
     display: flex;
     align-items: center;
@@ -62,11 +65,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffde59; /* Hover effect with yellow color */
+    color: #bbbfc8; /* Hover effect with yellow color */
 }
 
 nav ul li a.active {
-    border-bottom: 2px solid #ffde59; /* Active item underline */
+    border-bottom: 2px solid #bbbfc8; /* Active item underline */
 }
 
 /* Main Content Styling */
@@ -180,6 +183,6 @@ a:hover {
 
 /* Add Background Colors for Highlighted Sections */
 header, nav, footer {
-    color: white;
+    color: #080a15;
 }
 
