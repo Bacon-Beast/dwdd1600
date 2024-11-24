@@ -1,0 +1,325 @@
+/* Link this CSS file in your HTML head with: <link rel="stylesheet" href="styles.css"> */
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Roboto:wght@400;700&display=swap');
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #bbbfc8; /* Light background color */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #a8917f; /* Dark blue background */
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #111827; /* Dark border */
+}
+header, h1, h2 {
+    font-family: 'IM Fell Great Primer SC', serif;
+}
+header h1 {
+    font-size: 2em;
+    font-weight: 700; /* Bold font weight */
+    margin: 0;
+}
+
+header h2 {
+    font-size: 1.5em;
+    font-weight: 400; /* Regular font weight */
+    margin: 5px 0 0;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #f3d67b; /* yellow */
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #080a15;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1em;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: #bbbfc8; /* Hover effect with yellow color */
+}
+
+nav .active a {
+    border-bottom: 2px solid #bbbfc8; /* Active item underline */
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
+
+main h1 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #080a15;
+    margin-bottom: 10px;
+}
+
+main h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #080a15;
+    margin-top: 20px;
+}
+
+main p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+    clear: both; /* Ensure text appears below floated images */
+}
+
+/* List Styling */
+ul {
+    list-style-type: square; /* Change bullet type */
+    margin-left: 20px;
+    color: #080a15; /* List item color */
+}
+
+ol {
+    list-style-type: decimal; /* Default ordered list style */
+    margin-left: 20px;
+    color: #080a15; /* Ordered list item color */
+}
+
+/* Definition List Styling */
+dl dt {
+    font-weight: bold;
+    color: #080a15;
+    margin-top: 10px;
+}
+
+dl dd {
+    margin-left: 20px;
+    color: #333;
+    font-style: italic;
+}
+
+/* "Back to Top" Link */
+a[href="#top"] {
+    display: inline-block;
+    margin-top: 20px;
+    color: #ffde59;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a[href="#top"]:hover {
+    color: #ffde59;
+}
+
+/* Footer Styling */
+footer {
+    clear: both;
+    background-color: #a8917f;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    margin-top: 20px;
+    border-top: 4px solid #111827; /* Dark border */
+}
+
+footer a {
+    color: #ffde59;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffebcc;
+}
+
+/* Address Styling */
+address {
+    font-style: normal;
+    color: #ffde59;
+    font-weight: 400;
+}
+
+/* Border and Border Radius */
+main img {
+    border: 2px solid #a8917f; /* Blue border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 5px;
+}
+
+/* Responsive Flexbox for Lists */
+main ul, main ol {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hover Effect for Links */
+a:hover {
+    color: #ffde59; /* Bright yellow on hover */
+}
+
+/* Add Background Colors for Highlighted Sections */
+header, nav, footer {
+    color: #080a15;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center; /* This ensures even spacing */
+    gap: 10%; /* This will add a small gap between the images */
+    margin: 0 auto; /* Centers the container and adds margin */
+    max-width: 80%; /* Limits the width of the container to 80% of the screen */
+    margin-bottom: 20px; /* Add some space below the images */
+    }
+figure.wrapped {
+    width: 90%; /* Adjust container width */
+    max-width: 1200px; /* Prevent it from getting too large */
+    margin: 0 auto; /* Center the container */
+}
+
+figure.wrapped img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+.wrapped img {
+    max-width: 100%; /* Makes the image responsive to container size */
+    height: auto; /* Maintains aspect ratio */
+    width: 80%; /* Scales the image to 80% of its container */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensures proper centering */
+}
+
+main.jojo_gallery .wrapped img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+main.jojo_gallery figure.wrapped {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+main.jojo_gallery figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 25px;
+    float: right;
+}
+
+main.jojo_gallery figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+
+main.jojo_gallery figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+main.jojo_gallery div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main.jojo_gallery div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+
+main.jojo_gallery div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #ffde59;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
+    gap: 10px; /* Reduce spacing between elements */
+}
+
+form label, form legend {
+    text-align: left;
+    display: block; /* Ensures labels are block elements for alignment */
+    margin-bottom: 2px; /* Reduce space between labels and inputs */
+}
+
+form fieldset {
+    border: 2px solid #ffde59;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 15px;
+    width: 100%; /* Make the fieldset stretch full width */
+}
+
+form input, form select, form textarea, form button {
+    width: 10%; /* Stretch inputs, selects, and textarea full width */
+    min-width: 100px;
+    border: 1px solid #7f8c8d;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px; /* Add slight space below inputs for separation */
+}
+
+form button {
+    max-width: 200px; /* Optional: Limit button width */
+    background-color: #a8917f;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+form p {
+    margin-bottom: 5px; /* Reduce space between instructions and inputs */
+}
+#comments {
+    font-family: 'Roboto', sans-serif; /* Font for the comment box */
+    font-size: 1em; /* Same size as body text */
+    width: 96%; /* Stretches full width */
+    height: 200px; /* Increases the height of the textarea */
+    border: 1px solid #ffde59; /* Matches the border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding inside the box */
+    resize: vertical; /* Allows users to resize the height only */
+    background-color: #f9f9f9; /* Light background for the comment box */
+    color: #333; /* Dark text color for contrast */
+}
+
+form legend {
+    font-weight: bold;
+    color: #a8917f; /* Blue text for legend */
+}
