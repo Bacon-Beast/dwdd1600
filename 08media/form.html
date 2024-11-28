@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+    <meta charset="UTF-8">
+    <title>JJBA Best and Worst Protagonist: Form</title>
+    <meta name="description" content="Submit your opinion on JoJo's Bizarre Adventure protagonists">
+    <meta name="author" content="Daniel Andrew">
+    <link rel="stylesheet" href="jojo.css">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+    <!-- Header -->
+    <header id="top">
+        <div class="header-logo">
+            <img src="images/Speedwagon-employee.jpg" alt="JJBA Logo" width="87" height="100">
+        </div>
+        <h1>JJBA Best and Worst Protagonist</h1>
+        <h2>Share your thoughts about the series</h2>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="jotaro.html">Jotaro</a></li>
+            <li><a href="jonathan.html">Jonathan</a></li>
+            <li><a href="jojo_gallery.html">Gallery</a></li>
+            <li class="active"><a href="form.html">Forum</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main Content -->
+    <main>
+        <h1>Submit your opinion</h1>
+        <form action="thanks.html" method="GET">
+            <!-- First Fieldset -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Your Name*:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email Address*:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+            </fieldset>
+        
+            <!-- Second Fieldset -->
+            <fieldset>
+                <legend>Your Preferences</legend>
+                <label for="favorite-protagonist">Favorite Protagonist:</label>
+                <select id="favorite-protagonist" name="favorite-protagonist">
+                    <option value="jotaro">Jotaro</option>
+                    <option value="jonathan">Jonathan</option>
+                    <option value="other">Other</option>
+                </select>
+        
+                <p>Which features do you like in this protagonist? (Check all that apply)</p>
+                <label><input type="checkbox" name="features" value="bravery"> Bravery</label>
+                <label><input type="checkbox" name="features" value="intelligence"> Intelligence</label>
+                <label><input type="checkbox" name="features" value="loyalty"> Loyalty</label>
+            </fieldset>
+        
+            <!-- Third Fieldset -->
+            <fieldset>
+                <legend>Your Thoughts</legend>
+                <p>Do you prefer Stands or Hamon?*</p>
+                <label><input type="radio" name="power" value="stands" required> Stands</label>
+                <label><input type="radio" name="power" value="hamon"> Hamon</label>
+        
+                <label for="comments">Don't agree with this website?:</label>
+                <textarea id="comments" name="comments" placeholder="Share your thoughts"></textarea>
+            </fieldset>
+        
+            <button type="submit">Submit</button>
+        </form>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <address>
+            <p>&copy; 2024 &bull; Daniel Andrew &bull; <a href="mailto:10927339@uvu.edu">Email</a> &bull; <a href="tel:0000000000">Call</a></p>
+        </address>
+        <p>Watch the series on:
+            <a href="https://www.netflix.com/search?q=jojo&jbv=80179831" target="_blank">Netflix</a> |
+            <a href="https://www.crunchyroll.com/series/GYP8DP1MY/jojos-bizarre-adventure?srsltid=AfmBOorg3FC_V7ieu1lB9-VCLcrcwmDEAATNeuX8zEby70B1Qt5OXjfe" target="_blank">Crunchyroll</a>
+        </p>
+    </footer>
+    </div>
+    </body>
+</html>
